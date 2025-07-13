@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+}
+
+.navbar-left .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Shared nav-link styles */
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: black;
+}
+
+/* Button styles */
+.btn {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid gray;
+    color: gray;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+    border-color: black;
+    color: black;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
+
+.main-heading h1 {
+    color: black;
+    font-size: 40px;
+    font-family: arial;
+    max-width: 60%;
+}
+
+.main-heading .smallheding {
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 14px;
+    max-width: 30%;
+
+}
+
+.about-data {
+    text-align: right;
+    font-size: 13px;
+    color: gray;
+    margin-right: 30px;
+}
+
+
+.form-section {
+    background: url('Images/Hero.jpg');
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.search-form {
+    display: flex;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 400px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-form button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: gray;
+}
+
+.about h2 {
+    font-size: 50px;
+    font-family: Aloevera display;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.about p {
+    margin-left: 40px;
+    font-family: Aloevera display;
+    font-weight: 300;
+}
+
+.about-info{
+    display: flex;
+
+}
+
+.about-info h2{
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.small-info{
+    display: flex;
+    justify-content: end;
+    margin-right: 200px;
+}
+
+.line{
+    width: 100%;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.points p{
+    width: 100%;
+    margin-left: 200px;
+    font-family: Aloevera display;
+}
+
+.points-data{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.points-data p{
+        margin-left: 200px;
+    font-family: Aloevera display;
+}
+
+.line2{
+    margin-top: 20px;
+}
+
+.properties h2{
+    font-size: 50px;
+    font-family: Aloevera display;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.dicover{
+    margin-left: 40px;
+    font-family: Aloevera display;
+    font-weight: 300;
+}
+
+.card{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.card-img-top{
+    border-radius: 30px;
+}
+
+.fa-solid fa-location-dot{
+    margin-left: 5px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.work-process{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.main-body{
+    border: 1px solid gray;
+    width: 50%;
+    height: 30%;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.home{
+    display: flex;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.home h2{
+    text-align: right;
+    margin-left: 85%;
+}
+
+.search{
+    margin-left: 20px;
+    font-family: Aloevera display;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.search-data{
+    margin-left: 20px;
+}
+
+
+
+ .contact-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  .contact-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-wrapper p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .form-group input,
+  textarea {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    background-color: #ff6b00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    align-self: flex-end;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #e65c00;
+  }
+
+  @media (max-width: 600px) {
+    .form-group {
+      flex-direction: column;
+    }
+
+    .contact-wrapper {
+      padding: 20px;
+    }
+  }
+
+
+.ftr-line{
+    margin-top: 50px;
+    border: solid #a9a9a9;
+}
+
+.ftr-data{
+    display: flex;
+    justify-content: center;
+}
+
+
+  footer {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .ftr-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .ftr-data p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .ftr-data ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .ftr-data a.nav-link {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .ftr-data a.nav-link:hover {
+    color: black;
+  }
+
+
+
+/* Responsive */
+/* ===== Base Responsive Styles ===== */
+html {
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  flex-wrap: wrap;
+  padding: 15px 20px;
+}
+
+.navbar-center {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.navbar-center.active {
+  display: flex;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ===== Hero Section ===== */
+.main-heading {
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-heading h1 {
+  max-width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.main-heading .smallheding {
+  max-width: 100%;
+  text-align: center;
+}
+
+.about-data {
+  text-align: center;
+  margin: 20px;
+}
+
+/* ===== Search Form ===== */
+.form-section {
+  width: 95%;
+  margin: 30px auto;
+  height: auto;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.search-form {
+  flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+  width: 100%;
+}
+
+/* ===== About Section ===== */
+.about h2 {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.about-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info h2 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.small-info {
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+}
+
+/* ===== Points Section ===== */
+.points,
+.points-data {
+  flex-direction: column;
+  align-items: center;
+}
+
+.points p,
+.points-data p {
+  margin: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+
+/* ===== Properties Section ===== */
+.properties h2 {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
+
+.dicover p {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 90% !important;
+  margin: 15px 0;
+}
+
+/* ===== Work Process ===== */
+.work-process {
+  flex-direction: column;
+}
+
+.main-body {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+}
+
+.home h2 {
+  margin-left: auto;
+}
+
+/* ===== Footer ===== */
+.ftr-data ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .navbar-right .nav-link {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .search-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .search-form input,
+  .search-form select {
+    flex: 1 1 200px;
+  }
+  
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .navbar-center {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .card {
+    width: 22% !important;
+  }
+  
+  .work-process {
+    flex-direction: row;
+  }
+  
+  .main-body {
+    width: 45%;
+  }
+}
